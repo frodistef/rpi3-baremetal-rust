@@ -5,13 +5,6 @@ This project is my first project published on GitHub.
 
 I started with this after seeing a [YouTube video](https://www.youtube.com/watch?v=jZT8APrzvc4) of [lowlevellearning](https://github.com/lowlevellearning).
 
-
-Goals of this project:
-
-* learn using Rust for baremetal programming.
-* learn using GitHub
-
-
 ## Credits: 
 
 Credits go to:
@@ -33,6 +26,25 @@ As base, I took the linker script from [lowlevellearning](https://github.com/low
 https://github.com/lowlevellearning/raspberry-pi-baremetal-c
 
 
+## Achievements
+
+1. Have a blinking LED by running baremetal on a RPI3+ (2023-03-13);
+1. Have code stored in GitHub (2023-03-14).
+
+## Next Steps
+
+In random order, I'd like to add the following features to my code:
+
+1. Sent data from UART to the world;
+1. Receive data from the world on the UART;
+1. I.S.O. `loop`-s with `nop` instructions, use timers.
+    1. Investigate using interrupts? 
+1. Interrupts 
+    1. Enabling/Disabling interrupts;
+    1. Interrupt Service Routine;
+    1. Interrupt Vector table;
+
+
 ## Setup
 
 Hardware:
@@ -51,7 +63,7 @@ Software:
 
 ### OS
 
-I'm using a Debian (Bullseye) distrubution with Rust installed using:
+I'm using a Debian (Bullseye) distribution with Rust installed using:
 
 ```
 curl https://sh.rustup.rs -sSf | sh
@@ -115,7 +127,7 @@ Place SD in Raspberry Pi.
 
 Power Raspberry Pi.
 
-## Usefull commands
+## Useful commands
 
 To check if the addresses (for example the start of the code) is correct:
 
